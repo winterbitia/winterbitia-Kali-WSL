@@ -1,4 +1,4 @@
-# Winterbitia's Kali Linux Configuration
+# Winterbitia's Kali Linux WSL Configuration
 
 > Use `yadm` to easily use these configurations for yourself
 
@@ -11,8 +11,9 @@ These are the main configurations used for my **Kali Linux (WSL)** setup. Curren
 
 ## Notable Dependencies
 
-While these services don't neccessarily contain configuration files, they're very crucial in my setup to install on my WSL to have it running properly.
+While these services don't neccessarily contain configuration files, they're very crucial in my setup to install on my WSL to have it running effectively.
 * kali-linux-default
+* VSCode Server for WSL
 * yadm (yet another dotfiles manager)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
     * DejaVu Sans Mono
