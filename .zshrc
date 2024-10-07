@@ -36,6 +36,17 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
+bindkey ' ' magic-space                           # do history expansion on space
+bindkey '^U' backward-kill-line                   # ctrl + U
+bindkey '^[[3;5~' kill-word                       # ctrl + Supr
+bindkey '^[[3~' delete-char                       # delete
+bindkey '^[[1;5C' forward-word                    # ctrl + ->
+bindkey '^[[1;5D' backward-word                   # ctrl + <-
+bindkey '^[[5~' beginning-of-buffer-or-history    # page up
+bindkey '^[[6~' end-of-buffer-or-history          # page down
+bindkey '^[[H' beginning-of-line                  # home
+bindkey '^[[F' end-of-line                        # end
+bindkey '^[[Z' undo                               # shift + tab undo last action
 
 # History
 HISTSIZE=5000
@@ -49,6 +60,9 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+# hide EOL sign ('%')
+PROMPT_EOL_MARK=""
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -71,3 +85,6 @@ alias nf='neowofetch'
 alias c='clear'
 alias q='exit'
 
+# Work Aliases
+alias docs='cd ~/Documents'
+alias vpn='sudo openvpn --config ~/myitsvpn-5027231028@student.its.ac.id.ovpn --auth-user-pass /usr/share/openvpn/.itsvpn-creds.txt'
