@@ -33,8 +33,8 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zenful.toml)"
 
 # Keybindings
 bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
+# bindkey '^p' history-search-backward
+# bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 bindkey ' ' magic-space                           # do history expansion on space
 bindkey '^U' backward-kill-line                   # ctrl + U
@@ -88,3 +88,8 @@ alias q='exit'
 # Work Aliases
 alias docs='cd ~/Documents'
 alias vpn='sudo openvpn --config ~/myitsvpn-5027231028@student.its.ac.id.ovpn --auth-user-pass /usr/share/openvpn/.itsvpn-creds.txt'
+
+# Zoxide setup
+eval "$(zoxide init --cmd cd zsh)"
+
+

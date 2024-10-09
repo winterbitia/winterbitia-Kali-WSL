@@ -6,6 +6,7 @@ These are the main configurations used for my **Kali Linux (WSL)** setup. Curren
 
 * zshrc
 * vimrc
+* tmux
 * oh-my-posh
 * neowofetch
 
@@ -14,7 +15,10 @@ These are the main configurations used for my **Kali Linux (WSL)** setup. Curren
 While these services don't neccessarily contain configuration files, they're very crucial in my setup to install on my WSL to have it running effectively.
 * kali-linux-default
 * VSCode Server for WSL
-* yadm (yet another dotfiles manager)
+* [TPM](https://github.com/tmux-plugins/tpm)
+* [libtmux](https://libtmux.git-pull.com/)
+* [zoxide](https://github.com/ajeetdsouza/zoxide)
+* [yadm](https://yadm.io/docs/install#)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
     * DejaVu Sans Mono
 
@@ -28,6 +32,8 @@ Used Themes:
  <!-- [CLICK TO OPEN] -->
 <!-- </summary> -->
 * Microsoft Terminal
+* tmux
+* btop
 <!-- </details> -->
 
 ## Gallery
