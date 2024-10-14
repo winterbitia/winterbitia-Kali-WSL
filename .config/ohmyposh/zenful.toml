@@ -2,7 +2,9 @@
 
 version = 2
 final_space = true
-console_title_template = '{{ .Shell }} in {{ .Folder }}'
+# auto_upgrade = true
+console_title_template = '{{ .Folder }}'
+# console_title_template = ''
 
 [[blocks]]
   type = 'prompt'
@@ -12,7 +14,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   [[blocks.segments]]
     background = "transparent"
     foreground = "magenta"
-    template = "♥ {{ .UserName }} "
+    template = " ♥ {{ .UserName }} "
     style = "plain"
     type = "session"
 
@@ -66,7 +68,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
       "{{if eq .Code 0}}magenta{{end}}",
     ]
     background = 'transparent'
-    template = '❯'
+    template = ' ❯'
 
 #[transient_prompt]
  # foreground_templates = [
@@ -79,4 +81,4 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
 [secondary_prompt]
   foreground = 'magenta'
   background = 'transparent'
-  template = '❯❯ '
+  template = ' ❯❯ '
