@@ -89,6 +89,15 @@ alias q='exit'
 alias docs='cd ~/Documents'
 alias vpn='sudo openvpn --config ~/myitsvpn-5027231028@student.its.ac.id.ovpn --auth-user-pass /usr/share/openvpn/.itsvpn-creds.txt'
 
+# fzf theme
+
+export FZF_DEFAULT_OPTS="
+	--color=fg:#908caa,bg:#232136,hl:#ea9a97
+	--color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97
+	--color=border:#44415a,header:#3e8fb0,gutter:#232136
+	--color=spinner:#f6c177,info:#9ccfd8
+	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+
 # Zoxide setup
 eval "$(zoxide init --cmd cd zsh)"
 
