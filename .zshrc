@@ -27,6 +27,7 @@ zinit cdreplay -q
 
 # Export path
 export PATH=$PATH:/home/winter/.local/bin
+export PATH=$PATH:/home/winter/.cargo/bin
 
 # Activate oh-my-posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zenful.toml)"

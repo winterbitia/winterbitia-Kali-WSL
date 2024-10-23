@@ -38,4 +38,4 @@ Used Themes:
 
 ## Gallery
 
-![image](gallery/image2.png)
+![image](gallery/image3.png)
