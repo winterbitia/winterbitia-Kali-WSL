@@ -17,6 +17,7 @@ While these services don't neccessarily contain configuration files, they're ver
 * VSCode Server for WSL
 * [TPM](https://github.com/tmux-plugins/tpm)
 * [libtmux](https://libtmux.git-pull.com/)
+* [vim-plug](https://github.com/junegunn/vim-plug)
 * [zoxide](https://github.com/ajeetdsouza/zoxide)
 * [yadm](https://yadm.io/docs/install#)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
@@ -31,7 +32,7 @@ While these services don't neccessarily contain configuration files, they're ver
 Used Themes:
  <!-- [CLICK TO OPEN] -->
 <!-- </summary> -->
-* Microsoft Terminal
+* Windows Terminal
 * tmux
 * btop
 <!-- </details> -->
