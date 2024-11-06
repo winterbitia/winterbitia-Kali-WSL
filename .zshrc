@@ -34,8 +34,6 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zenful.toml)"
 
 # Keybindings
 bindkey -e
-# bindkey '^p' history-search-backward
-# bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 bindkey ' ' magic-space                           # do history expansion on space
 bindkey '^U' backward-kill-line                   # ctrl + U
@@ -88,10 +86,12 @@ alias q='exit'
 
 # Work Aliases
 alias docs='cd ~/Documents'
-alias vpn='sudo openvpn --config ~/myitsvpn-5027231028@student.its.ac.id.ovpn --auth-user-pass /usr/share/openvpn/.itsvpn-creds.txt'
+alias vpn='/home/winter/vpn-script.sh'
+
+# App Aliases
+alias wcode='cmd.exe /c code'
 
 # fzf theme
-
 export FZF_DEFAULT_OPTS="
 	--color=fg:#908caa,bg:#232136,hl:#ea9a97
 	--color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97
@@ -102,4 +102,7 @@ export FZF_DEFAULT_OPTS="
 # Zoxide setup
 eval "$(zoxide init --cmd cd zsh)"
 
-
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
