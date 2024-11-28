@@ -31,9 +31,8 @@ let g:lightline = {
 " BASIC SETTINGS "
 
 set number
-set relativenumber
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set autoindent
 set mouse=a
 

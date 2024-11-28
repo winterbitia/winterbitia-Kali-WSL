@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "blue",
+          "properties": {
+            "cache_duration": "none",
+            "style": "agnoster_short",
+            "max_depth": 2
+          },
+          "style": "diamond",
+          "template": " <cyan>\u256d\ueaf7</>  <b>{{ .Path }}</b>",
+          "type": "path"
+        },
+        {
+          "foreground": "darkGray",
+          "properties": {
+            "cache_duration": "none",
+            "branch_icon": "",
+            "commit_icon": "@",
+            "fetch_status": true
+          },
+          "style": "diamond",
+          "template": " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "cyan",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "style": "plain",
+          "template": " \u2570\u2500>",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "secondary_prompt": {
+    "alignment": "left",
+    "segments": [
+      {
+        "foreground": "cyan",
+        "properties": {
+          "cache_duration": "none"
+        },
+        "style": "plain",
+        "template": " \u2570>>",
+        "type": "text"
+      }
+    ],
+    "type": "prompt"
+  },
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "final_space": true,
+  "version": 3
+}

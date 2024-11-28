@@ -20,8 +20,7 @@ While these services don't neccessarily contain configuration files, they're ver
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [zoxide](https://github.com/ajeetdsouza/zoxide)
 * [yadm](https://yadm.io/docs/install#)
-* [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
-    * DejaVu Sans Mono
+* [SFMono Nerd Font Ligaturized](https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized)
 
 ## Rose Pine Themes
 

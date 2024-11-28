@@ -26,26 +26,20 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Export path
-export PATH=$PATH:/home/winter/.local/bin
-export PATH=$PATH:/home/winter/.cargo/bin
+export PATH=$PATH:/home/winter/.local/bin:/home/winter/.cargo/bin
 
 # Activate oh-my-posh
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zenful.toml)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/json.json)"
 
 # Keybindings
-bindkey -e
-bindkey '^[w' kill-region
-bindkey ' ' magic-space                           # do history expansion on space
-bindkey '^U' backward-kill-line                   # ctrl + U
-bindkey '^[[3;5~' kill-word                       # ctrl + Supr
-bindkey '^[[3~' delete-char                       # delete
-bindkey '^[[1;5C' forward-word                    # ctrl + ->
-bindkey '^[[1;5D' backward-word                   # ctrl + <-
-bindkey '^[[5~' beginning-of-buffer-or-history    # page up
-bindkey '^[[6~' end-of-buffer-or-history          # page down
-bindkey '^[[H' beginning-of-line                  # home
-bindkey '^[[F' end-of-line                        # end
-bindkey '^[[Z' undo                               # shift + tab undo last action
+bindkey '^[w' kill-region			# Alt + W
+bindkey ' ' magic-space				# Space
+bindkey '5~' kill-word				# C + Del
+bindkey '^H' backward-kill-word		# C + Back
+bindkey '^[[1;5C' forward-word		# C + ->
+bindkey '^[[1;5D' backward-word		# C + <-
+bindkey '^[[H' beginning-of-line	# Home
+bindkey '^[[F' end-of-line			# End
 
 # History
 HISTSIZE=5000
@@ -85,19 +79,15 @@ alias c='clear'
 alias q='exit'
 
 # Work Aliases
-alias docs='cd ~/Documents'
-alias vpn='/home/winter/vpn-script.sh'
+alias vpn-its='/home/winter/vpn-script.sh'
 
 # App Aliases
 alias wcode='cmd.exe /c code'
+alias ghidra='cmd.exe /c C:/WSL/tools/ghidra_11.2_PUBLIC_20240926/ghidra_11.2_PUBLIC/ghidraRun.bat'
 
 # fzf theme
-export FZF_DEFAULT_OPTS="
-	--color=fg:#908caa,bg:#232136,hl:#ea9a97
-	--color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97
-	--color=border:#44415a,header:#3e8fb0,gutter:#232136
-	--color=spinner:#f6c177,info:#9ccfd8
-	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+export FZF_DEFAULT_OPTS="--color=fg:#908caa,bg:#232136,hl:#ea9a97 --color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97 --color=border:#44415a,header:#3e8fb0,gutter:#232136 --color=spinner:#f6c177,info:#9ccfd8 --color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+export _ZO_FZF_OPTS=$FZF_DEFAULT_OPTS
 
 # Zoxide setup
 eval "$(zoxide init --cmd cd zsh)"
